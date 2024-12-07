@@ -29,8 +29,8 @@
   --main-text: #5E6282;
   --blue: #4475F2;
   --dark-blue: #181E4B;
-  --light-blue: #23A6F0;
-  --link-active: #4737FF;
+  --light-blue: #23a6f0;
+  --link-active: #4737ff;
   --link-unactive: #9A9EA6;
   --border-accent: #BDBDBD;
   --gray: #dedede
@@ -293,9 +293,6 @@ body {
 .header._header-scroll {
   background-color: #fff
 }
-.header._header-scroll .header__container {
-  min-height: 3.4375rem
-}
 .header__container {
   display: flex;
   align-items: center;
@@ -375,13 +372,10 @@ body {
   justify-items: center
 }
 .footer__managed-link {
-  transition: all .4s ease 0s;
+  transition: all .3s ease 0s;
   position: relative;
   z-index: 2;
   aspect-ratio: 248/93
-}
-.footer__managed-link img {
-  max-width: 100%
 }
 .footer__managed-link img {
   position: absolute;
@@ -821,6 +815,9 @@ body {
   .text p:not(:last-child) {
     margin-bottom: .9375rem
   }
+  .header._header-scroll .header__container {
+    min-height: 5.3125rem
+  }
   .header__container {
     -webkit-column-gap: 7.8125rem;
     -moz-column-gap: 7.8125rem;
@@ -1185,6 +1182,9 @@ body {
   }
 }
 @media (max-width:47.99875em) {
+  .header._header-scroll .header__container {
+    min-height: 3.4375rem
+  }
   .header__container {
     -webkit-column-gap: 1.875rem;
     -moz-column-gap: 1.875rem;
@@ -1524,6 +1524,9 @@ body {
   }
 }
 @media (min-width:47.99875em)and (max-width:76.875em) {
+  .header._header-scroll .header__container {
+    min-height: clamp(3.4375rem ,.3208329726rem + 6.4932254015vw ,5.3125rem)
+  }
   .header__container {
     -webkit-column-gap: clamp(1.875rem ,-7.9944455868rem + 20.5618804381vw ,7.8125rem);
     -moz-column-gap: clamp(1.875rem ,-7.9944455868rem + 20.5618804381vw ,7.8125rem);
@@ -1599,6 +1602,10 @@ body {
   }
   .menu__link:hover {
     color: var(--link-active)
+  }
+  .footer__managed-link:hover {
+    -webkit-filter: drop-shadow(.3125rem .3125rem .3125rem rgba(71, 55, 255, .25));
+    filter: drop-shadow(.3125rem .3125rem .3125rem rgba(71, 55, 255, .25))
   }
   .footer__slogan-link:hover {
     color: var(--link-active)
