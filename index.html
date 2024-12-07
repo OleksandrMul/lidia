@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20241104180900">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241207105617">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,9 +18,9 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-watch data-scroll="80" class="header">
 			<div class="header__container">
-				<div class="header__logo"><img src="img/logo.webp" alt=""></div>
+				<a href="#" data-goto-header data-goto=".hero" class="header__logo"><img src="img/logo.webp" alt="header-logo"></a>
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
@@ -47,29 +47,31 @@
 						</div>
 						<a href="#" class="hero__button button">Start now <span>→</span></a>
 					</div>
-					<div data-coefficient="450" data-prlx data-direction="1" class="hero__images images-hero">
-						<div data-prlx-dxr data-prlx-dxy data-prlx-mouse data-prlx-cx="400" data-prlx-cy="400" class="images-hero__item images-hero__item--01">
-							<a href="#" class="images-hero__item-link">
-								<img src="img/hero/01.webp" class="images-hero__image" alt="Image">
-							</a>
+					<div class="hero__body">
+						<div data-coefficient="450" data-prlx data-direction="1" class="hero__images images-hero">
+							<div data-prlx-dxr data-prlx-dxy data-prlx-mouse data-prlx-cx="400" data-prlx-cy="400" class="images-hero__item images-hero__item--01">
+								<a href="#" class="images-hero__item-link">
+									<img src="img/hero/01.webp" class="images-hero__image" alt="Image">
+								</a>
+							</div>
+							<div data-prlx-mouse data-prlx-cx="350" data-prlx-cy="350" class="images-hero__item images-hero__item--02">
+								<a href="#" class="images-hero__item-link">
+									<img src="img/hero/02.webp" class="images-hero__image" alt="Image">
+								</a>
+							</div>
+							<div data-prlx-mouse data-prlx-cx="400" data-prlx-cy="400" class="images-hero__item images-hero__item--03">
+								<a href="#" class="images-hero__item-link">
+									<img src="img/hero/03.webp" class="images-hero__image" alt="Image">
+								</a>
+							</div>
+							<div data-prlx-dxr data-prlx-dxy data-prlx-mouse data-prlx-cx="350" data-prlx-cy="350" class="images-hero__item images-hero__item--04">
+								<a href="#" class="images-hero__item-link">
+									<img src="img/hero/04.webp" class="images-hero__image" alt="Image">
+								</a>
+							</div>
 						</div>
-						<div data-prlx-mouse data-prlx-cx="350" data-prlx-cy="350" class="images-hero__item images-hero__item--02">
-							<a href="#" class="images-hero__item-link">
-								<img src="img/hero/02.webp" class="images-hero__image" alt="Image">
-							</a>
-						</div>
-						<div data-prlx-mouse data-prlx-cx="400" data-prlx-cy="400" class="images-hero__item images-hero__item--03">
-							<a href="#" class="images-hero__item-link">
-								<img src="img/hero/03.webp" class="images-hero__image" alt="Image">
-							</a>
-						</div>
-						<div data-prlx-dxr data-prlx-dxy data-prlx-mouse data-prlx-cx="350" data-prlx-cy="350" class="images-hero__item images-hero__item--04">
-							<a href="#" class="images-hero__item-link">
-								<img src="img/hero/04.webp" class="images-hero__image" alt="Image">
-							</a>
-						</div>
-
 					</div>
+
 				</div>
 			</section>
 			<section data-watch-threshold="0.2" data-watch="navigator" class="page__features features">
@@ -201,7 +203,7 @@
 				<div class="footer__body">
 					<div class="footer__column footer__column--main">
 						<h4 class="footer__title label">Managed By</h4>
-						<a href="#" class="footer__managed-link"><img src="img/logo.webp" alt="footer-logo"></a>
+						<a href="#" data-goto=".hero" class="footer__managed-link"><img src="img/logo.webp" alt="footer-logo"></a>
 					</div>
 					<div class="footer__column">
 						<h4 class="footer__title label">Social Media</h4>
@@ -224,7 +226,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241104180900"></script>
+	<script src="js/app.min.js?_v=20241207105617"></script>
 </body>
 
 </html>
